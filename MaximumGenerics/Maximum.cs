@@ -7,9 +7,9 @@ internal class Maximum<T> where T : IComparable
     {
         this.array = array;
     }
-    public void Max(T var1, T var2, T var3)
+    public void Max(params T[] array)
     {
-        array[0] = var1; array[1] = var2; array[2] = var3;
+        this.array = array;
         Array.Sort(array);
         Console.WriteLine($"Max value is: {array[2]}");
     }
