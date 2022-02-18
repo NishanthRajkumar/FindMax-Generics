@@ -28,6 +28,6 @@ internal class Maximum<T> where T : IComparable
     /// </summary>
     private void PrintMax(T[] value)
     {
-        Console.WriteLine($"Max value is: {array[2]}");
+        Console.WriteLine($"Max value is: {value[^1]}");
     }
 }
